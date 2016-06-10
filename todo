@@ -1,0 +1,37 @@
+HEADER:
+	perspective/parallax på bild
+
+	Nav:
+		Fixed, färg vid scroll-position
+		animerad dropdown
+
+
+MAIN:
+	Sektioner:
+		Bloopers
+
+
+	Produkter/tjänster:
+
+	Kontakt:
+		Modal:
+			Formulär - mail
+
+
+FOOTER:
+	Footer:
+
+
+SASS:
+	Färger
+	Typsnitt
+
+
+ÖVRIGT:
+	Animationer
+		perspektive
+	Modals
+	Dölj/visa sektioner / olika pages?
+
+OM TID FINNS:
+	WooCommerse

@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/*
+Theme Name: Kaffia
+Theme URI: http://www.kaffia.se
+Author: Anders Söderström
+Author URI: http://www.kaffia.se
+Description: Theme Practice
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: Responsive
+Text Domain: kaffia
+*/
+/* ============================
+		COLORS
+============================ */
+/* ============================
+		FONTS
+============================ */
+/* =============================
+		MAIN
+============================= */
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+/* =============================
+		HEADER
+============================= */
+.main-head {
+  background: url("img/105.jpg") no-repeat center center scroll;
+  z-index: -1;
+  min-height: 25em;
+}
+
+/* Basic */
+ul li {
+  list-style: none;
+  display: block;
+}
+ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+ul li a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Burger menu */
+.bgr-menu {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 96px;
+  height: 96px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.bgr-menu span {
+  display: block;
+  position: absolute;
+  top: 44px;
+  left: 18px;
+  right: 18px;
+  height: 8px;
+  background: #fff;
+}
+.bgr-menu span:before, .bgr-menu span:after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #fff;
+  content: "";
+}
+.bgr-menu span:before {
+  top: -20px;
+}
+.bgr-menu span:after {
+  bottom: -20px;
+}
+
+/* Burger menu transform */
+.bgr-x {
+  background-color: #ff3264;
+}
+.bgr-x span {
+  transition: background 0s 0.3s;
+}
+.bgr-x span:before, .bgr-x span:after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+.bgr-x span:before {
+  transition-property: top, transform;
+}
+.bgr-x span:after {
+  transition-property: bottom, transform;
+}
+
+/* Burger menu active state, i.e. menu open */
+.bgr-x.is-active {
+  background-color: #cb0032;
+}
+.bgr-x.is-active span {
+  background: none;
+}
+.bgr-x.is-active span:before {
+  top: 0;
+  transform: rotate(45deg);
+}
+.bgr-x.is-active span:after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+.bgr-x.is-active span:before, .bgr-x.is-active span:after {
+  transition-delay: 0s, 0.3s;
+}
+
+@media (min-width: 768px) {
+  /* Basic */
+  ul {
+    padding-left: 0;
+  }
+  ul li {
+    display: inline-block;
+    padding-right: 4em;
+  }
+  ul li a {
+    font-size: 2.5em;
+    font-weight: 700;
+    transition-duration: 0.2s;
+    padding: 0.2em;
+  }
+  ul li a:hover {
+    outline: 3px solid #fff;
+  }
+
+  /* Burger menu */
+}
+@media (min-width: 1024px) {
+  body {
+    background-color: #000;
+  }
+}

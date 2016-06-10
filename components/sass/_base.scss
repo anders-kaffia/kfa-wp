@@ -1,0 +1,46 @@
+/* =============================
+		MAIN
+============================= */
+html, body {
+	height: 100%;
+}
+.all-container {
+	min-height: 100%;
+	padding: 0;
+	position: relative;
+}
+
+body {
+	font-family: $primaryFont;
+}
+
+h1 {
+	font-weight: 700;
+}
+
+/* =============================
+		HEADER
+============================= */
+.main-head {
+	min-height: 25em;
+	position: relative;
+}
+
+/* =============================
+		FOOTER
+============================= */
+.footer-container {
+	position: absolute;
+	max-height: 4em;
+	width: 100%;
+	padding: 4.5em;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	padding: 1em;
+	background: $darkGrey;
+	color: $lightGrey;
+}
+.foot {
+	width: 100%;
+}
