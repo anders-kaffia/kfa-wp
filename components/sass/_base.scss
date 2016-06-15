@@ -33,14 +33,15 @@ h1 {
 	position: absolute;
 	max-height: 4em;
 	width: 100%;
-	padding: 4.5em;
+	padding: 3em;
+	margin: 3em 0 0;
 	bottom: 0;
 	left: 0;
 	text-align: center;
-	padding: 1em;
 	background: $darkGrey;
 	color: $lightGrey;
 }
-.foot {
+#foot {
 	width: 100%;
+	margin-left: 0;
 }

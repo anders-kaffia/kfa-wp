@@ -26,8 +26,9 @@
 			display: block;
 			a {
 				display: block;
+				padding: 1.3em 0;
 				letter-spacing: 0.2em;
-				font-size: 1.7em;
+				font-size: 2em;
 				color: $white;
 				text-decoration: none;
 				&:hover {
@@ -61,7 +62,7 @@
 	border: none;
 	cursor: pointer;
 	transition: background 0.3s;
-	 span {
+	span {
 		display: block;
 		position: absolute;
 		top: 44px;
@@ -121,9 +122,13 @@
 		}
 	}
 }
-/* =====================================
-			PAGE SPECIFIC
-===================================== */
 
-
-
+/* ==============================
+			PORTFOLIO
+============================== */
+.thumbnail {
+	img {
+		max-width: 16em;
+		height: auto;
+	}
+}
