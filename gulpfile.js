@@ -47,11 +47,11 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('watch', function(){
-	gulp.watch(jsSources, ['concatScripts', 'browser-sync']);
-	gulp.watch('components/sass/*.scss', ['sass', 'browser-sync']);
+	gulp.watch(jsSources, ['minifyScripts']);
+	gulp.watch('components/sass/*.scss', ['sass']);
 });
 
-gulp.task('default', ['minifyScripts', 'sass', 'browser-sync']);
+gulp.task('default', ['minifyScripts', 'sass', 'watch']);
 
 
 

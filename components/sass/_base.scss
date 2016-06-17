@@ -1,28 +1,66 @@
 /* =============================
 		MAIN
 ============================= */
+* {
+	box-sizing: border-box;
+}
 html, body {
 	height: 100%;
-}
-.all-container {
-	min-height: 100%;
+	margin: 0;
 	padding: 0;
-	position: relative;
 }
-
 body {
 	font-family: $primaryFont;
+	line-height: 1.6;
+	background: $almostWhite;
 }
-
+img {
+	max-width: 100%;
+}
 h1 {
 	font-weight: 700;
+}
+a {
+	text-decoration: none;
+}
+#wrapper {
+	min-height: 100%;
+	padding: 0;
+	flex-direction: column;
+}
+#wrapper, .row, .container, .col {
+	display: flex;
+}
+.row {
+
+}
+.col {
+	flex-direction: column;
+	flex: 1;
+	padding: 1em;
+	min-width: 22em;
+	// outline: 1px solid black;
+}
+.container {
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.button {
+	margin-top: auto;
+	padding: .7em 1.5em;
+	color: $orange;
+	text-align: center;
+	background: $darkGrey;
+	border-radius: .35em;
+	align-self: flex-start;
 }
 
 /* =============================
 		HEADER
 ============================= */
 .main-head {
-	min-height: 25em;
+	min-height: 20em;
 	position: relative;
 }
 
@@ -30,13 +68,10 @@ h1 {
 		FOOTER
 ============================= */
 .footer-container {
-	position: absolute;
-	max-height: 4em;
+	display: flex;
 	width: 100%;
-	padding: 3em;
-	margin: 3em 0 0;
-	bottom: 0;
-	left: 0;
+	margin-top: auto;
+	padding: 1em;
 	text-align: center;
 	background: $darkGrey;
 	color: $lightGrey;

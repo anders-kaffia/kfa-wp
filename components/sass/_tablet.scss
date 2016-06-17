@@ -1,39 +1,53 @@
 /* Basic */
-
+.row {
+	width: 80%;
+}
+.col {
+	min-width: 22em;
+}
 
 /* =====================================
 			NAVIGATION
 ===================================== */
-
-
 /* Burger menu */
 .bgr-menu {
 	display: none;
 }
 
 /* Main Nav Menu */
-
-
 .main-nav {
 	position: static;
 	transform: translateX(0);
 	background-color: transparent;
+	margin-top: 12em;
 	ul {
-	padding-left: 0;
+		padding-left: 0;
+		display: flex;
+		justify-content: space-around;
 		li {
-			display: inline-block;
-			padding-right: 4em;
 			a {
 				letter-spacing: 0.2em;
-				font-size: 2.5em;
-				font-weight: 700;
-				// transition: all 0.1s cubic-bezier(.19,0,.7,1);
-				padding: 0.2em;
-				// &:hover {
-				// 	transform: skewX(25deg);
-				// 	border-bottom: 3px solid $white;
-				// }
+				font-size: 2.2em;
+				font-weight: 400;
 			}
+		}
+	}
+}
+.fixed-nav {
+	position: fixed;
+	background: $almostWhite;
+	width: 100%;
+	.main-nav {
+		margin-top: 0;
+		transition: all 0.2s cubic-bezier(0.6, 0, 0.5, 1.6);
+		a {
+			color: $lightGrey;
+			font-size: 1.5em;
+			font-weight: 400;
+			padding: 0;
+			&:hover {
+					color: $black;
+				}
 		}
 	}
 }
@@ -43,7 +57,10 @@
 ============================== */
 .thumbnail {
 	img {
-		max-width: 16em;
-		height: auto;
+		width: auto;
+		max-height: 12em;
 	}
+}
+.single {
+	align-self: center;
 }

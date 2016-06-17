@@ -1,13 +1,17 @@
 /* Basic */
-
-
-
+.row {
+	flex-wrap: wrap;
+	width: 90%;
+}
+.col {
+	min-width: 23em;
+}
 /* =====================================
 			NAVIGATION
 ===================================== */
 
-.menu-container {
-	position: relative;
+#menu-container {
+	display: flex;
 }
 
 .main-nav {
@@ -17,7 +21,6 @@
 	width: 100%;
 	height: auto;
 	text-align: center;
-	
 	transform: translateX(-100%);
 	transition: all 0.6s cubic-bezier(0.6, 0, 0.5, 1.6);
 	ul {
@@ -29,7 +32,7 @@
 				padding: 1.3em 0;
 				letter-spacing: 0.2em;
 				font-size: 2em;
-				color: $white;
+				color: $almostWhite;
 				text-decoration: none;
 				&:hover {
 					text-decoration: none;
