@@ -1,0 +1,5 @@
+@mixin bg-img($url) {
+	background: url($url) $darkGrey;
+	background-size: cover;
+	background-position: center;
+}

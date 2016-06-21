@@ -27,7 +27,7 @@
 		li {
 			a {
 				letter-spacing: 0.2em;
-				font-size: 2.2em;
+				font-size: 2.8em;
 				font-weight: 400;
 			}
 		}
@@ -42,12 +42,12 @@
 		transition: all 0.2s cubic-bezier(0.6, 0, 0.5, 1.6);
 		a {
 			color: $lightGrey;
-			font-size: 1.5em;
+			font-size: 2em;
 			font-weight: 400;
 			padding: 0;
 			&:hover {
 					color: $black;
-				}
+			}
 		}
 	}
 }
@@ -63,4 +63,18 @@
 }
 .single {
 	align-self: center;
+}
+/* ==============================
+			ABOUT
+============================== */
+.col.about {
+	h1 {
+		font-size: 4em;
+	}
+}
+#contact-modal {
+	min-width: 27em;
+	min-height: 28em;
+	margin-left: -13.5em;
+	margin-top: -14em;
 }
